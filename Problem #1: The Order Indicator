@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double degrees,angle,radians,d,lembda,distance,wavelength;
+    int m;
+    printf("Enter the value of Wavelength(nm):\n",lembda);
+    scanf("%lf", &lembda);
+    printf("Enter the value of theta in degrees:\n");
+    scanf("%lf", &degrees);
+    radians = degrees * 3.1416 / 180.0;
+    angle = sin(radians);
+    printf("Enter the value of d(µm):\n");
+    scanf("%lf", &d);
+    distance = 0.000001*d;
+    wavelength = 0.000000001*lembda;
+    m = distance*angle/wavelength;
+    if(lembda >= 380 && lembda<450){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 380 && lembda<450){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 450 && lembda<485){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 485 && lembda<500){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 500 && lembda<565){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 565 && lembda<590){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 590 && lembda<625){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else if(lembda >= 625 && lembda <= 750){
+        printf("The order of the maxima in a double slit diffraction is: %d\n",m);
+    }else{
+        printf("Out of range. Please enter a valid number.\n");
+    }
+    return 0;
+}
