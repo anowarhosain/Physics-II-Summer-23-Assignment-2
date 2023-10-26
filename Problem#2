@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double theta_deg = 45.0;  // Angle in degrees
+    double m = 1.0;           // Order of the minimum
+    double theta_rad = theta_deg * 3.1416 / 180.0;//convert the angle from degree to radian
+    double ratio = m / sin(theta_rad);
+    printf("The ratio of slit width to wavelength is = %lf\n", ratio);
+    return 0;
+}
